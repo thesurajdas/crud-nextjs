@@ -1,7 +1,6 @@
 import connectMongoDB from "@/libs/mongodb";
 import Topic from "@/models/topic";
 import { NextResponse } from "next/server";
-export const runtime = 'edge';
 export async function PUT(request, { params }) {
   const { id } = params;
   const { newTitle: title, newDescription: description } = await request.json();
