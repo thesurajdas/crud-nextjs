@@ -1,5 +1,5 @@
 import TopicsList from "@/components/TopicsList";
-
+export const runtime = "edge";
 const getTopics = async () => {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/topics`, {
