@@ -13,14 +13,12 @@ const getTopics = async () => {
     return await res.json();
   } catch (error) {
     console.error("Error fetching topics:", error.message);
-    return { topics: [] }; // Fallback to an empty array
   }
 };
 
 export default async function Home() {
   const data = await getTopics();
 
-  // Handle case where no topics are available
   if (!data?.topics || data.topics.length === 0) {
     return <p>No topics available.</p>;
   }
