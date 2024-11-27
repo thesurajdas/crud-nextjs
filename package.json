@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-crud",
+  "name": "next-crud-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,18 +12,26 @@
     "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "^14.0.4",
     "mongoose": "^7.3.0",
-    "next": "^14.0.4",
     "postcss": "8.4.24",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.5"
+    "@cloudflare/next-on-pages": "^1.13.5",
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "eslint-plugin-next-on-pages": "^1.13.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "vercel": "^39.1.1",
+    "wrangler": "^3.90.0"
   }
 }
